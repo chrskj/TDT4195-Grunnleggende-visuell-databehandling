@@ -2,11 +2,13 @@
 #define PROGRAM_HPP
 #pragma once
 
-
 // System headers
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 #include <string>
+#include <vector>
+#include <math.h>
+#include <glm/gtc/matrix_transform.hpp>
 
 
 // Main OpenGL program

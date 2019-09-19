@@ -1,4 +1,3 @@
-#include <vector>
 // Local headers
 #include "program.hpp"
 #include "gloom/gloom.hpp"
@@ -43,6 +42,10 @@ void setup_vao(float *ver_ptr, uint ver_count, uint *ind_ptr, uint ind_count,
 
 void runProgram(GLFWwindow* window)
 {
+    // Enable transparancy
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     // Enable depth (Z) buffer (accept "closest" fragment)
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
@@ -51,7 +54,7 @@ void runProgram(GLFWwindow* window)
     glEnable(GL_CULL_FACE);
 
     // Set default colour after clearing the colour buffer
-    glClearColor(0.3f, 0.5f, 0.8f, 1.0f);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
     // Data
   float vertices[] = {
@@ -147,6 +150,76 @@ void runProgram(GLFWwindow* window)
         33, 34, 35, 
     };
 
+    /* 8 trekanter
+  float vertices[] = {
+        1.0f, 1.0f, 0.0f,
+        0.0f, 1.0f, 0.0f,
+        -1.0f, 1.0f, 1.0f,
+        -1.0f, 0.0f, 1.0f,
+        -1.0f, -1.0f, 1.0f,
+        0.0f, -1.0f, 1.0f,
+        1.0f, -1.0f, 1.0f,
+        1.0f, 0.0f, 1.0f,
+        0.0f, 0.0f, 0.0f,
+    };
+
+    float vertix_colors[] = {
+        1.583f,  0.771f,  0.014f, 1.0f,
+        0.609f,  0.115f,  0.436f, 1.0f,
+        0.327f,  0.483f,  0.844f, 1.0f,
+        0.822f,  0.569f,  0.201f, 1.0f,
+        0.435f,  0.602f,  0.223f, 1.0f,
+        0.310f,  0.747f,  0.185f, 1.0f,
+        0.597f,  0.770f,  0.761f, 1.0f,
+        0.559f,  0.436f,  0.730f, 1.0f,
+        0.359f,  0.583f,  0.152f, 1.0f,
+    };
+
+    uint indices[] = {
+        0, 1, 8,
+        1, 2, 8, 
+        2, 3, 8,
+        3, 4, 8, 
+        4, 5, 8,
+        5, 6, 8, 
+        6, 7, 8,
+        7, 0, 8, 
+    };
+    */
+        
+    /* overlappende trekanter
+    float vertices[] = {
+        0.6f, 1.0f, 0.75f,
+        -0.6f, 1.0f, 0.75f,
+        0.0f, -0.6f, 0.75f,
+        -1.0f, 0.6f, 0.5f,
+        -1.0f, -0.6f, 0.5f,
+        0.6f, 0.0f, 0.5f,
+        1.0f, -0.6f, 0.25f,
+        1.0f, 0.6f, 0.25f,
+        -0.6f, 0.0f, 0.25f,
+    };
+
+    float vertix_colors[] = {
+        1.0f, 0.0f, 0.0f, 0.5f,
+        1.0f, 0.0f, 0.0f, 0.5f,
+        1.0f, 0.0f, 0.0f, 0.5f,
+        0.0f, 1.0f, 0.0f, 0.5f,
+        0.0f, 1.0f, 0.0f, 0.5f,
+        0.0f, 1.0f, 0.0f, 0.5f,
+        0.0f, 0.0f, 1.0f, 0.5f,
+        0.0f, 0.0f, 1.0f, 0.5f,
+        0.0f, 0.0f, 1.0f, 0.5f,
+    };
+
+    uint indices[] = {
+        0,1,2,
+        3,4,5,
+        6,7,8,
+        9,10,11
+    };
+    */
+
     setup_vao(vertices, sizeof(vertices), indices, sizeof(indices),
             vertix_colors, sizeof(vertix_colors));
 
@@ -156,11 +229,19 @@ void runProgram(GLFWwindow* window)
             "../gloom/shaders/simple.frag");
     shader.activate();
 
+    float inc = 1;
+
     // Rendering Loop
     while (!glfwWindowShouldClose(window))
     {
         // Clear colour and depth buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        inc++;
+        if(inc>360)
+            inc = 0;
+
+        glUniform1f(2, sin(inc*DEG2RAD));
 
         // Draw your scene here
         glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(uint),
