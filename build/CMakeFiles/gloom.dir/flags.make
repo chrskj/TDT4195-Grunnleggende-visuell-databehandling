@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_FLAGS =  
 
-C_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/chrisgsk/Downloads/gloom\"
+C_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling\"
 
-C_INCLUDES = -I/home/chrisgsk/Downloads/gloom/gloom/src -I/home/chrisgsk/Downloads/gloom/gloom/vendor/glad/include -I/home/chrisgsk/Downloads/gloom/gloom/vendor/glfw/include -I/home/chrisgsk/Downloads/gloom/gloom/vendor/glm -I/home/chrisgsk/Downloads/gloom/gloom/vendor/stb 
+C_INCLUDES = -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glad/include -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/include -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glm -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/stb 
 
 CXX_FLAGS =  -Wall -Wextra -Wpedantic -std=c++11  
 
-CXX_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/chrisgsk/Downloads/gloom\"
+CXX_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling\"
 
-CXX_INCLUDES = -I/home/chrisgsk/Downloads/gloom/gloom/src -I/home/chrisgsk/Downloads/gloom/gloom/vendor/glad/include -I/home/chrisgsk/Downloads/gloom/gloom/vendor/glfw/include -I/home/chrisgsk/Downloads/gloom/gloom/vendor/glm -I/home/chrisgsk/Downloads/gloom/gloom/vendor/stb 
+CXX_INCLUDES = -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glad/include -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/include -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glm -I/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/stb 
 

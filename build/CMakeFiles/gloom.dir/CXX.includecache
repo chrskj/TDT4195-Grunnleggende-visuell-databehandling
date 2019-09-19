@@ -78,13 +78,13 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/chrisgsk/Downloads/gloom/gloom/src/gloom/gloom.hpp
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/gloom/gloom.hpp
 glad/glad.h
 -
 string
 -
 
-/home/chrisgsk/Downloads/gloom/gloom/src/gloom/shader.hpp
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/gloom/shader.hpp
 glad/glad.h
 -
 cassert
@@ -96,17 +96,17 @@ memory
 string
 -
 
-/home/chrisgsk/Downloads/gloom/gloom/src/program.cpp
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/program.cpp
 vector
 -
 program.hpp
-/home/chrisgsk/Downloads/gloom/gloom/src/program.hpp
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/program.hpp
 gloom/gloom.hpp
-/home/chrisgsk/Downloads/gloom/gloom/src/gloom/gloom.hpp
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/gloom/gloom.hpp
 gloom/shader.hpp
-/home/chrisgsk/Downloads/gloom/gloom/src/gloom/shader.hpp
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/gloom/shader.hpp
 
-/home/chrisgsk/Downloads/gloom/gloom/src/program.hpp
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/program.hpp
 GLFW/glfw3.h
 -
 glad/glad.h

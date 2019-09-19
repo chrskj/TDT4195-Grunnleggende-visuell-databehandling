@@ -1,4 +1,4 @@
-# Install script for directory: /home/chrisgsk/Downloads/gloom/gloom/vendor/glfw/src
+# Install script for directory: /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

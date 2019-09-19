@@ -1,8 +1,8 @@
-/home/chrisgsk/Downloads/gloom/build/CMakeFiles/rebuild_cache.dir
-/home/chrisgsk/Downloads/gloom/build/CMakeFiles/gloom.dir
-/home/chrisgsk/Downloads/gloom/build/CMakeFiles/edit_cache.dir
-/home/chrisgsk/Downloads/gloom/build/gloom/vendor/glfw/CMakeFiles/rebuild_cache.dir
-/home/chrisgsk/Downloads/gloom/build/gloom/vendor/glfw/CMakeFiles/edit_cache.dir
-/home/chrisgsk/Downloads/gloom/build/gloom/vendor/glfw/src/CMakeFiles/rebuild_cache.dir
-/home/chrisgsk/Downloads/gloom/build/gloom/vendor/glfw/src/CMakeFiles/glfw.dir
-/home/chrisgsk/Downloads/gloom/build/gloom/vendor/glfw/src/CMakeFiles/edit_cache.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/CMakeFiles/rebuild_cache.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/CMakeFiles/gloom.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/CMakeFiles/edit_cache.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/gloom/vendor/glfw/CMakeFiles/rebuild_cache.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/gloom/vendor/glfw/CMakeFiles/edit_cache.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/gloom/vendor/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/gloom/vendor/glfw/src/CMakeFiles/glfw.dir
+/home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/gloom/vendor/glfw/src/CMakeFiles/edit_cache.dir

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chrisgsk/Downloads/gloom
+CMAKE_SOURCE_DIR = /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chrisgsk/Downloads/gloom/build
+CMAKE_BINARY_DIR = /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all:
-	cd /home/chrisgsk/Downloads/gloom/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chrisgsk/Downloads/gloom/build/CMakeFiles /home/chrisgsk/Downloads/gloom/build/gloom/vendor/glfw/CMakeFiles/progress.marks
-	cd /home/chrisgsk/Downloads/gloom/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/chrisgsk/Downloads/gloom/build/CMakeFiles 0
+	cd /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/CMakeFiles /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/gloom/vendor/glfw/CMakeFiles/progress.marks
+	cd /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/chrisgsk/Downloads/gloom/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/clean
+	cd /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/chrisgsk/Downloads/gloom/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
+	cd /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/chrisgsk/Downloads/gloom/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
+	cd /home/chrisgsk/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
 .PHONY : preinstall/fast
 
 # Help Target
