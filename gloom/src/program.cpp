@@ -229,7 +229,7 @@ void runProgram(GLFWwindow* window)
             "../gloom/shaders/simple.frag");
     shader.activate();
 
-    float inc = 1;
+    float inc = 90;
 
     // Rendering Loop
     while (!glfwWindowShouldClose(window))
@@ -241,7 +241,7 @@ void runProgram(GLFWwindow* window)
         if(inc>360)
             inc = 0;
 
-        glUniform1f(2, sin(inc*DEG2RAD));
+        glUniform1f(2, inc*DEG2RAD);
 
         // Draw your scene here
         glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(uint),

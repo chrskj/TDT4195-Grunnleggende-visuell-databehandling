@@ -11,7 +11,7 @@ void main()
 {
     vec4 model_pos = vec4(position, 1.0f);
     mat4 model_mat = mat4(
-        osc,0,0,0,
+        1,osc,0,0,
         0,1,0,0,
         0,0,1,0,
         0,0,0,1
