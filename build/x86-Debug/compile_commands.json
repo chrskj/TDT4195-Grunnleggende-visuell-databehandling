@@ -1,0 +1,109 @@
+[
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo /TP -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\\\"C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling\\\" -I..\\..\\gloom\\src -I..\\..\\gloom\\vendor\\glad\\include -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glm -I..\\..\\gloom\\vendor\\stb  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /W4 /MDd /Zi /Ob0 /Od /RTC1   /FoCMakeFiles\\gloom.dir\\gloom\\src\\main.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\src\\main.cpp",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/main.cpp"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo /TP -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\\\"C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling\\\" -I..\\..\\gloom\\src -I..\\..\\gloom\\vendor\\glad\\include -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glm -I..\\..\\gloom\\vendor\\stb  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /W4 /MDd /Zi /Ob0 /Od /RTC1   /FoCMakeFiles\\gloom.dir\\gloom\\src\\program.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\src\\program.cpp",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/src/program.cpp"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\\\"C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling\\\" -I..\\..\\gloom\\src -I..\\..\\gloom\\vendor\\glad\\include -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glm -I..\\..\\gloom\\vendor\\stb  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /FoCMakeFiles\\gloom.dir\\gloom\\vendor\\glad\\src\\glad.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glad\\src\\glad.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glad/src/glad.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\context.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/context.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\init.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\init.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/init.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\input.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\input.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/input.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\monitor.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/monitor.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\vulkan.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/vulkan.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\window.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\window.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/window.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\win32_init.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/win32_init.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\win32_joystick.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/win32_joystick.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\win32_monitor.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/win32_monitor.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\win32_time.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/win32_time.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\win32_thread.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/win32_thread.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\win32_window.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/win32_window.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\wgl_context.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/wgl_context.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\egl_context.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/egl_context.c"
+},
+
+{
+  "directory": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/build/x86-Debug",
+  "command": "C:\\PROGRA~2\\MIB055~1\\2017\\COMMUN~1\\VC\\Tools\\MSVC\\1416~1.270\\bin\\HostX86\\x86\\cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -I..\\..\\gloom\\vendor\\glfw\\include -I..\\..\\gloom\\vendor\\glfw\\src -Igloom\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /W3 /MDd /Zi /Ob0 /Od /RTC1   /Fogloom\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\gloom\\vendor\\glfw\\src\\osmesa_context.c",
+  "file": "C:/Users/Christofer/Downloads/TDT4195-Grunnleggende-visuell-databehandling/gloom/vendor/glfw/src/osmesa_context.c"
+}
+]

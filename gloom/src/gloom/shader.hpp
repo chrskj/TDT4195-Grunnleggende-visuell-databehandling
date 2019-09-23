@@ -29,7 +29,7 @@ namespace Gloom
         void attach(std::string const &filename)
         {
             // Load GLSL Shader from source
-            std::ifstream fd(filename.c_str());
+			std::ifstream fd(filename.c_str());
             if (fd.fail())
             {
                 fprintf(stderr,

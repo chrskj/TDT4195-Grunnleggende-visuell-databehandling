@@ -5,8 +5,8 @@
 
 const float DEG2RAD = 3.14159/180;
  
-void setup_vao(float *ver_ptr, uint ver_count, uint *ind_ptr, uint ind_count,
-        float *clr_ver_ptr, uint clr_count)
+void setup_vao(float *ver_ptr, unsigned int ver_count, unsigned int *ind_ptr, unsigned int ind_count,
+        float *clr_ver_ptr, unsigned int clr_count)
 {
     // Vertex array object
     GLuint vao;
@@ -57,7 +57,7 @@ void runProgram(GLFWwindow* window)
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
     // Data
-  float vertices[] = {
+	float vertices[] = {
         -1.0f,-1.0f,-1.0f,
         -1.0f, 1.0f, 1.0f,
         -1.0f,-1.0f, 1.0f,
@@ -135,7 +135,7 @@ void runProgram(GLFWwindow* window)
         0.982f,  0.099f,  0.879f, 1.0f,
     };
 
-    uint indices[] = {
+    unsigned int indices[] = {
         0, 1, 2,
         3, 4, 5, 
         6, 7, 8,
@@ -175,7 +175,7 @@ void runProgram(GLFWwindow* window)
         0.359f,  0.583f,  0.152f, 1.0f,
     };
 
-    uint indices[] = {
+    unsigned int indices[] = {
         0, 1, 8,
         1, 2, 8, 
         2, 3, 8,
@@ -212,7 +212,7 @@ void runProgram(GLFWwindow* window)
         0.0f, 0.0f, 1.0f, 0.5f,
     };
 
-    uint indices[] = {
+    unsigned int indices[] = {
         0,1,2,
         3,4,5,
         6,7,8,
@@ -225,11 +225,15 @@ void runProgram(GLFWwindow* window)
 
     // shader
     Gloom::Shader shader;
-    shader.makeBasicShader("../gloom/shaders/simple.vert",
-            "../gloom/shaders/simple.frag");
+    shader.makeBasicShader("../../../gloom/shaders/simple.vert", "../../../gloom/shaders/simple.frag");
     shader.activate();
 
-    float inc = 90;
+	float test_numbers[] = { 
+		.5,0,0,0,
+		0,.5,0,0,
+		0,0,.5,0,
+		0,0,0,1 
+	};
 
     // Rendering Loop
     while (!glfwWindowShouldClose(window))
@@ -237,14 +241,10 @@ void runProgram(GLFWwindow* window)
         // Clear colour and depth buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        inc++;
-        if(inc>360)
-            inc = 0;
-
-        glUniform1f(2, inc*DEG2RAD);
+		glUniformMatrix4fv(2, 1, GL_FALSE, test_numbers);
 
         // Draw your scene here
-        glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(uint),
+        glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(unsigned int),
                 GL_UNSIGNED_INT, 0);
 
         // Handle other events

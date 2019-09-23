@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-TDT4195-Grunnleggende-visuell-databehandling",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}
