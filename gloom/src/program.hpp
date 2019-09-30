@@ -7,6 +7,7 @@
 #include <glad/glad.h>
 #include <string>
 #include <vector>
+#include <iostream>
 #include <math.h>
 #include <glm/gtc/matrix_transform.hpp>
 

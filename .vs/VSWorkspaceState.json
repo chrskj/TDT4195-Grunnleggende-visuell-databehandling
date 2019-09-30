@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\CMakeLists.txt",
+    "\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\CMakeLists.txt\\gloom.exe (gloom\\gloom.exe)",
+    "\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\CMakeLists.txt\\gloom.exe (gloom\\gloom.exe)\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\headers",
+    "\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\CMakeLists.txt\\gloom.exe (gloom\\gloom.exe)\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\sources"
   ],
-  "SelectedNode": "\\CMakeSettings.json",
+  "SelectedNode": "\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\CMakeLists.txt\\gloom.exe (gloom\\gloom.exe)\\C:\\Users\\Christofer\\Downloads\\TDT4195-Grunnleggende-visuell-databehandling\\headers\\program.hpp",
   "PreviewInSolutionExplorer": false
 }

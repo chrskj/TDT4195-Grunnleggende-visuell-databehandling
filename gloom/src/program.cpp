@@ -2,8 +2,19 @@
 #include "program.hpp"
 #include "gloom/gloom.hpp"
 #include "gloom/shader.hpp"
+#include "glm/ext.hpp"
 
 const float DEG2RAD = 3.14159/180;
+
+float x_strafe = 0;
+float y_strafe = 0;
+float z_strafe = 3;
+glm::vec3 current_translation = glm::vec3(x_strafe, y_strafe, z_strafe);
+
+float x_rot = 0.0f;
+float y_rot = 0.0f;
+float z_rot = 0.0f;
+glm::vec3 current_rotation = glm::vec3(x_rot, y_rot, z_rot);
  
 void setup_vao(float *ver_ptr, unsigned int ver_count, unsigned int *ind_ptr, unsigned int ind_count,
         float *clr_ver_ptr, unsigned int clr_count)
@@ -40,6 +51,17 @@ void setup_vao(float *ver_ptr, unsigned int ver_count, unsigned int *ind_ptr, un
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, ind_count, ind_ptr, GL_STATIC_DRAW);
 }
 
+std::ostream &operator<< (std::ostream &out, const glm::mat4x4 &m) {
+	out << "{" << "\n"
+		<< m[0][0] << "\t" << m[0][1] << "\t" << m[0][2] << "\t" << m[0][3] << "\n"
+		<< m[1][0] << "\t" << m[1][1] << "\t" << m[1][2] << "\t" << m[1][3] << "\n"
+		<< m[2][0] << "\t" << m[2][1] << "\t" << m[2][2] << "\t" << m[2][3] << "\n"
+		<< m[3][0] << "\t" << m[3][1] << "\t" << m[3][2] << "\t" << m[3][3] << "\n"
+		<< "}";
+
+	return out;
+}
+
 void runProgram(GLFWwindow* window)
 {
     // Enable transparancy
@@ -61,36 +83,47 @@ void runProgram(GLFWwindow* window)
         -1.0f,-1.0f,-1.0f,
         -1.0f, 1.0f, 1.0f,
         -1.0f,-1.0f, 1.0f,
-        1.0f, 1.0f,-1.0f,
+        
+		1.0f, 1.0f,-1.0f,
         -1.0f, 1.0f,-1.0f,
         -1.0f,-1.0f,-1.0f,
-        1.0f,-1.0f, 1.0f,
+        
+		1.0f,-1.0f, 1.0f,
         1.0f,-1.0f,-1.0f,
         -1.0f,-1.0f,-1.0f,
-        1.0f, 1.0f,-1.0f,
+        
+		1.0f, 1.0f,-1.0f,
         -1.0f,-1.0f,-1.0f,
         1.0f,-1.0f,-1.0f,
-        -1.0f,-1.0f,-1.0f,
+        
+		-1.0f,-1.0f,-1.0f,
         -1.0f, 1.0f,-1.0f,
         -1.0f, 1.0f, 1.0f,
-        1.0f,-1.0f, 1.0f,
+        
+		1.0f,-1.0f, 1.0f,
         -1.0f,-1.0f,-1.0f,
         -1.0f,-1.0f, 1.0f,
-        -1.0f, 1.0f, 1.0f,
+        
+		-1.0f, 1.0f, 1.0f,
         1.0f,-1.0f, 1.0f,
         -1.0f,-1.0f, 1.0f,
-        1.0f, 1.0f, 1.0f,
+        
+		1.0f, 1.0f, 1.0f,
         1.0f, 1.0f,-1.0f,
         1.0f,-1.0f,-1.0f,
-        1.0f,-1.0f,-1.0f,
+        
+		1.0f,-1.0f,-1.0f,
         1.0f,-1.0f, 1.0f,
         1.0f, 1.0f, 1.0f,
-        1.0f, 1.0f, 1.0f,
+        
+		1.0f, 1.0f, 1.0f,
         -1.0f, 1.0f,-1.0f,
         1.0f, 1.0f,-1.0f,
-        1.0f, 1.0f, 1.0f,
+        
+		1.0f, 1.0f, 1.0f,
         -1.0f, 1.0f, 1.0f,
         -1.0f, 1.0f,-1.0f,
+
         1.0f, 1.0f, 1.0f,
         1.0f,-1.0f, 1.0f,
         -1.0f, 1.0f, 1.0f,
@@ -228,12 +261,19 @@ void runProgram(GLFWwindow* window)
     shader.makeBasicShader("../../../gloom/shaders/simple.vert", "../../../gloom/shaders/simple.frag");
     shader.activate();
 
-	float test_numbers[] = { 
-		.5,0,0,0,
-		0,.5,0,0,
-		0,0,.5,0,
-		0,0,0,1 
-	};
+	// Matrix transformation
+	glm::mat4 id_mat = glm::mat4(1.f);
+	glm::mat4 correction_mat = glm::mat4x4(
+		1.0f, 0.0f, 0.0f, 0.0f,
+		0.0f, 1.0f, 0.0f, 0.0f,
+		0.0f, 0.0f, -1.0f, 0.0f,
+		0.0f, 0.0f, 0.0f, 1.0f);
+	glm::mat4x4 update_translation = glm::translate(id_mat, current_translation);
+	glm::mat4x4 update_rotation_x = glm::rotate(id_mat, x_rot, current_rotation);
+	glm::mat4x4 update_rotation_y = glm::rotate(id_mat, y_rot, current_rotation);
+	glm::mat4x4 update_rotation_z = glm::rotate(id_mat, z_rot, current_rotation);
+	glm::mat4x4 model_mat = id_mat * update_translation;
+	glm::mat4x4 projection_mat = glm::perspective(30.0f, 1.0f, 1.0f, 100.0f);
 
     // Rendering Loop
     while (!glfwWindowShouldClose(window))
@@ -241,7 +281,21 @@ void runProgram(GLFWwindow* window)
         // Clear colour and depth buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		glUniformMatrix4fv(2, 1, GL_FALSE, test_numbers);
+		// Matrix transformation
+		current_translation = glm::vec3(x_strafe, y_strafe, z_strafe);
+		update_translation = glm::translate(id_mat, current_translation);
+
+		current_rotation = glm::vec3(x_rot, y_rot, z_rot);
+		update_rotation_x = glm::rotate(id_mat, x_rot, glm::vec3(1,0,0));
+		update_rotation_y = glm::rotate(id_mat, y_rot, glm::vec3(0,1,0));
+		update_rotation_z = glm::rotate(id_mat, z_rot, glm::vec3(0,0,1));
+
+		model_mat = correction_mat*update_translation*update_rotation_x*update_rotation_y*update_rotation_z;
+		//std::cout << update_rotation << std::endl;
+
+		// Send array of 4x4-matrix values to shader
+		glUniformMatrix4fv(2, 1, GL_FALSE, &model_mat[0][0]);
+		glUniformMatrix4fv(3, 1, GL_FALSE, &projection_mat[0][0]);
 
         // Draw your scene here
         glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(unsigned int),
@@ -265,5 +319,53 @@ void handleKeyboardInput(GLFWwindow* window)
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
     {
         glfwSetWindowShouldClose(window, GL_TRUE);
+    }
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+    {
+		z_strafe = z_strafe - 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+    {
+		z_strafe = z_strafe + 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+    {
+		x_strafe = x_strafe - 0.01f;
+    }
+   if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+    {
+		x_strafe = x_strafe + 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
+    {
+		y_strafe = y_strafe - 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
+    {
+		y_strafe = y_strafe + 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+    {
+		x_rot = x_rot - 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+    {
+		x_rot = x_rot + 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+    {
+		y_rot = y_rot - 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+    {
+		y_rot = y_rot + 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+    {
+		z_rot = z_rot - 0.01f;
+    }
+    if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
+    {
+		z_rot = z_rot + 0.01f;
     }
 }
