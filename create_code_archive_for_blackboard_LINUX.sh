@@ -1,1 +1,1 @@
-zip -r source.zip gloom/src gloom/shaders report.pdf
+zip -r source.zip gloom/src gloom/shaders
